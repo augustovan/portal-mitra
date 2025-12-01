@@ -60,6 +60,14 @@ export default function Header({ alertasNaoLidos = 0 }: HeaderProps) {
               Por Estado
             </Link>
             <Link
+              href="/pesquisa-opiniao"
+              className={`hover:text-missao-yellow transition-colors ${
+                isActive('/pesquisa-opiniao') ? 'text-missao-yellow' : 'text-white'
+              }`}
+            >
+              Opinião Pública
+            </Link>
+            <Link
               href="/alertas"
               className={`hover:text-missao-yellow transition-colors relative ${
                 isActive('/alertas') ? 'text-missao-yellow' : 'text-white'
